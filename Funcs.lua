@@ -15,7 +15,7 @@ for i,v in pairs(_G.SaveSettings.SelectAbilities) do
                 if _G.DashNOCD then
                     if game.Players.LocalPlayer.Character:FindFirstChild('Dodge') and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
                         if typeof(v) == "function" and getfenv(v).script == game.Players.LocalPlayer.Character:FindFirstChild('Dodge') then
-                            for i2,v2 in next, getupvalues(v) do
+                            for i2,v2 in next, debug.getupvalues(v) do
                                 if tostring(v2) == "0.4" or tostring(v2) == "0.475" then
                                     repeat wait(.1)
                                         if (game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and game.Players.LocalPlayer.Character.Humanoid.Health > 0) and game.Players.LocalPlayer.Character:FindFirstChild('Dodge') then
@@ -32,7 +32,7 @@ for i,v in pairs(_G.SaveSettings.SelectAbilities) do
                 if _G.GeppoNOCD then
                     if game.Players.LocalPlayer.Character:FindFirstChild('Skyjump') and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
                         if typeof(v) == "function" and getfenv(v).script == game.Players.LocalPlayer.Character:FindFirstChild('Skyjump') then
-                            for i2,v2 in next, getupvalues(v) do
+                            for i2,v2 in next, debug.getupvalues(v) do
                                 if tostring(i2) == "9" then
                                     repeat wait(.1)
                                         if (game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and game.Players.LocalPlayer.Character.Humanoid.Health > 0) and game.Players.LocalPlayer.Character:FindFirstChild('Skyjump') then
@@ -49,7 +49,7 @@ for i,v in pairs(_G.SaveSettings.SelectAbilities) do
                 if _G.SoruNOCD then
                     if game.Players.LocalPlayer.Character:FindFirstChild('Soru') and game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
                         if typeof(v) == "function" and getfenv(v).script == game.Players.LocalPlayer.Character:FindFirstChild('Soru') then
-                            for i2,v2 in next, getupvalues(v) do
+                            for i2,v2 in next, debug.getupvalues(v) do
                                 if typeof(v2) == "table" then
                                     repeat wait(.1)
                                         if (game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") and game.Players.LocalPlayer.Character.Humanoid.Health > 0) and game.Players.LocalPlayer.Character:FindFirstChild('Soru') then
